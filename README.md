@@ -8,6 +8,7 @@
 * [PhantomJSのインストール](#PhantomJSのインストール)
 * [herokuCLIのインストール](#herokuCLIのインストール)
 
+<a id="OSXのパス通し"></a>
 # OSXのパス通し
 
 * ***パスの記述ファイル：*** `sudo nano ~/.bash_profile`
@@ -16,13 +17,16 @@
 
 * ***環境変数の確認：*** `echo $PATH`
 
+<a id="Homebrewのインストール"></a>
 # Homebrewのインストール ##
   `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
   * 参）https://brew.sh/index_ja.html
 
+<a id="gitのインストール"></a>
 # gitのインストール
   * `brew install git`
 
+<a id="railsのインストール"></a>
 # railsのインストール
 
 ## rbenvのインストール
@@ -64,12 +68,14 @@
 ## 環境変数に適用
   * `source ~/.bash_profile`
 
+<a id="postgreSQLのインストール"></a>
 # postgreSQLのインストール
   * `brew install postgresql`
   * `initdb /usr/local/var/postgres -E utf8`
   * `postgres --version`
   * `postgres -D /usr/local/var/postgres`
 
+<a id="Pythonのインストール"></a>
 # Pythonのインストール
 
 ## pyenvのインストール
@@ -89,6 +95,7 @@
   * `pyenv versions`
   * `python -V`
 
+<a id="PhantomJSのインストール"></a>
 # PhantomJSのインストール
 
 ## npmのインストール
@@ -97,6 +104,7 @@
 ## PhantomJSのインストール
   * `npm install phantom phantomjs -g`
 
+<a id="herokuCLIのインストール"></a>
 # herokuCLIのインストール
 
   * `brew install heroku/brew/heroku`
