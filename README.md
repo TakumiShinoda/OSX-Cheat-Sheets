@@ -1,4 +1,12 @@
 # 開発メモ
+* [OSXのパス通し](#OSXのパス通し)
+* [Homebrewのインストール](#Homebrewのインストール)
+* [gitのインストール](#gitのインストール)
+* [railsのインストール](#railsのインストール)
+* [postgreSQLのインストール](#postgreSQLのインストール)
+* [Pythonのインストール](#Pythonのインストール)
+* [PhantomJSのインストール](#PhantomJSのインストール)
+* [herokuCLIのインストール](#herokuCLIのインストール)
 
 # OSXのパス通し
 
@@ -8,7 +16,7 @@
 
 * ***環境変数の確認：*** `echo $PATH`
 
-# Home brewのインストール ##
+# Homebrewのインストール ##
   `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
   * 参）https://brew.sh/index_ja.html
 
