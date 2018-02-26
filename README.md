@@ -8,6 +8,7 @@
 * [PhantomJSのインストール](#PhantomJSのインストール)
 * [herokuCLIのインストール](#herokuCLIのインストール)
 * [Composerのインストール](#Composerのインストール)
+* [VirtualBoxでraspbianのセットアップ](#VirtualBoxでraspbianのセットアップ)
 
 <a id="OSXのパス通し"></a>
 # OSXのパス通し
@@ -116,3 +117,21 @@
   * `mv composer.phar /usr/local/bin/composer`
   * `compose -V`でバージョン確認
   参）https://qiita.com/m_snow/items/f9397760fb20733c9e5b
+
+<a id="VirtualBoxでraspbianのセットアップ"></a>
+# VirtualBoxでraspbianのセットアップ
+  * isoのダウンロード
+  url）https://www.raspberrypi.org/downloads/raspberry-pi-desktop/
+  * VirtualBoxで仮想イメージの作成
+  <br>
+  ***必須設定***
+  <br>
+  <br>
+  ***タイプ：*** Other
+  <br>
+  ***バージョン*** Other Unknown(64bit)
+  <br>
+  <br>
+  * 作成したイメージを起動
+  * OSイメージを要求されるのでOSイメージ（ex. .iso）ファイルを選択
+  * 各OS毎のインストールに従う
