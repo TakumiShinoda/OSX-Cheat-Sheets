@@ -7,6 +7,7 @@
 * [Pythonのインストール](#Pythonのインストール)
 * [PhantomJSのインストール](#PhantomJSのインストール)
 * [herokuCLIのインストール](#herokuCLIのインストール)
+* [Composerのインストール](#Composerのインストール)
 
 <a id="OSXのパス通し"></a>
 # OSXのパス通し
@@ -19,8 +20,8 @@
 
 <a id="Homebrewのインストール"></a>
 # Homebrewのインストール ##
-  `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-  * 参）https://brew.sh/index_ja.html
+  * `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+  参）https://brew.sh/index_ja.html
 
 <a id="gitのインストール"></a>
 # gitのインストール
@@ -108,3 +109,10 @@
 # herokuCLIのインストール
 
   * `brew install heroku/brew/heroku`
+
+<a id="Composerのインストール"></a>
+# Composerのインストール
+  * `curl -sS https://getcomposer.org/installer | php`
+  * `mv composer.phar /usr/local/bin/composer`
+  * `compose -V`でバージョン確認
+  参）https://qiita.com/m_snow/items/f9397760fb20733c9e5b
