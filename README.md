@@ -157,6 +157,22 @@
 
 <a id="raspbianでcakephpの詰まる所"></a>
 # raspbian(Debian)でcakephpの詰まる所
+  ## php-intlを'php.ini'で有効化
+  * php.iniを編集
+
+    php.iniの場所：`/etc/php/{バージョン}/cli/php.ini`又は`/etc/php/{バージョン}/apache2/php.ini`
+
+    php.ini：
+    ```
+      + extension=php_intl.so
+      #もし'mbstingがない言われたらapt-getでインストールして'
+      + extension=php_mbstring.so
+
+      #もしWindowsなら
+      + extension=php_intl.dll
+      + extension=php_mbstring.dll
+    ```
+
   ## プロジェクト作成時に'ext-simplexml'がないと言われる
   参）https://saka24.blue/index.php/2017/07/10/simplexml/
 
