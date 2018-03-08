@@ -10,6 +10,7 @@
 * [Composerのインストール](#Composerのインストール)
 * [VirtualBoxでraspbianのセットアップ](#VirtualBoxでraspbianのセットアップ)
 * [raspbian(Debian)でapache + phpのセッティング](#raspbianでapache+phpのセッティング)
+* [raspbian(Debian)でcakephpの詰まる所](#raspbianでcakephpの詰まる所)
 
 <a id="OSXのパス通し"></a>
 # OSXのパス通し
@@ -153,3 +154,13 @@
   * ドキュメントルート(初期は`/var/www/html`)にindex.phpを作成して`<?php phpinfo(); ?>`を追記
   * `sudo service apache2 start`でサーバーを起動
   * http://localhost/index.php でphp情報が表示されれば成功
+
+<a id="raspbianでcakephpの詰まる所"></a>
+# raspbian(Debian)でcakephpの詰まる所
+  ## プロジェクト作成時に'ext-simplexml'がないと言われる
+  参）https://saka24.blue/index.php/2017/07/10/simplexml/
+
+  * まずphp-xmlのインストール：`sudo apt-get install php-xml`
+  * ext-simplexmlは存在しないので、'halilim/xml-iterator'をインストールする
+
+    `composer require halilim/xml-iterator`
