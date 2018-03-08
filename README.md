@@ -9,6 +9,7 @@
 * [herokuCLIのインストール](#herokuCLIのインストール)
 * [Composerのインストール](#Composerのインストール)
 * [VirtualBoxでraspbianのセットアップ](#VirtualBoxでraspbianのセットアップ)
+* [raspbian(Debian)でapache + phpのセッティング](#raspbianでapache+phpのセッティング)
 
 <a id="OSXのパス通し"></a>
 # OSXのパス通し
@@ -145,6 +146,7 @@
   * OSイメージを要求されるのでOSイメージ（ex. .iso）ファイルを選択
   * 各OS毎のインストールに従う
 
+<a id="raspbianでapache+phpのセッティング"></a>
 # raspbian(Debian)でapache + phpのセッティング
   * `sudo apt-get install php7.0`
   * `sudo apt-get install apache2`
