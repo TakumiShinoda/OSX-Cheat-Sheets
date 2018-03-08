@@ -9,6 +9,7 @@
 * [herokuCLIのインストール](#herokuCLIのインストール)
 * [Composerのインストール](#Composerのインストール)
 * [VirtualBoxでraspbianのセットアップ](#VirtualBoxでraspbianのセットアップ)
+* [raspbian(Debian)でComposerのインストール](#raspbianでComposerのインストール)
 * [raspbian(Debian)でapache + phpのセッティング](#raspbianでapache+phpのセッティング)
 * [raspbian(Debian)でcakephpの詰まる所](#raspbianでcakephpの詰まる所)
 
@@ -155,6 +156,7 @@
   * `sudo service apache2 start`でサーバーを起動
   * http://localhost/index.php でphp情報が表示されれば成功
 
+<a id="raspbianでComposerのインストール"></a>
 # raspbian(Debian)でComposerのインストール
   * 適当なディレクトリに移動
   * 適当な名前でフォルダ作成して移動
