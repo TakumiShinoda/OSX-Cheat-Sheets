@@ -144,3 +144,10 @@
   * 作成したイメージを起動
   * OSイメージを要求されるのでOSイメージ（ex. .iso）ファイルを選択
   * 各OS毎のインストールに従う
+
+# raspbian(Debian)でapache + phpのセッティング
+  * `sudo apt-get install php7.0`
+  * `sudo apt-get install apache2`
+  * ドキュメントルート(初期は`/var/www/html`)にindex.phpを作成して`<?php phpinfo(); ?>`を追記
+  * `sudo service apache2 start`でサーバーを起動
+  * http://localhost/index.php でphp情報が表示されれば成功
