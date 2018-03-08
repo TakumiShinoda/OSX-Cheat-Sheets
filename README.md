@@ -155,8 +155,31 @@
   * `sudo service apache2 start`でサーバーを起動
   * http://localhost/index.php でphp情報が表示されれば成功
 
+# raspbian(Debian)でComposerのインストール
+  * 適当なディレクトリに移動
+  * 適当な名前でフォルダ作成して移動
+  * 必要なものを落とす：`curl -sS https://getcomposer.org/installer | php`
+  * エイリアスで'composer'コマンドを登録：`alias composer='{ディレクトリ}/composer.phar'`
+  * 移行'composer'コマンドで利用できる
+
 <a id="raspbianでcakephpの詰まる所"></a>
 # raspbian(Debian)でcakephpの詰まる所
+  ## php-intlを'php.ini'で有効化
+  * php.iniを編集
+
+    php.iniの場所：`/etc/php/{バージョン}/cli/php.ini`又は`/etc/php/{バージョン}/apache2/php.ini`
+
+    php.ini：
+    ```
+      + extension=php_intl.so
+      #もし'mbstingがない言われたらapt-getでインストールして'
+      + extension=php_mbstring.so
+
+      #もしWindowsなら
+      + extension=php_intl.dll
+      + extension=php_mbstring.dll
+    ```
+
   ## プロジェクト作成時に'ext-simplexml'がないと言われる
   参）https://saka24.blue/index.php/2017/07/10/simplexml/
 
