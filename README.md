@@ -118,6 +118,15 @@
   * `compose -V`でバージョン確認
   参）https://qiita.com/m_snow/items/f9397760fb20733c9e5b
 
+<a id=""></a>
+# cakephpプロジェクトの作成
+  * `composer create-project --prefer-dist cakephp/app {プロジェクト名}`
+### 注）intl関連でエラーが出た時
+  解決）php7.2に乗り換えるとうまくいく
+  * `brew install homebrew/php/php72-intl`
+  * .bash_profileに`export PATH="$(brew --prefix homebrew/php/php72)/bin:$PATH"`を追記
+  * `php -v`でバージョン確認
+
 <a id="VirtualBoxでraspbianのセットアップ"></a>
 # VirtualBoxでraspbianのセットアップ
   * isoのダウンロード
