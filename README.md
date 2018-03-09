@@ -141,7 +141,6 @@
   <br>
   ***タイプ：*** Other
   <br>
-  ***バージョン*** Other Unknown(64bit)
   ***バージョン：*** Other Unknown(64bit)
   <br>
   ***容量：*** 8GB以上が必要
@@ -149,7 +148,6 @@
   <br>
   * 作成したイメージを起動
   * OSイメージを要求されるのでOSイメージ（ex. .iso）ファイルを選択
-  * 各OS毎のインストールに従う
   * メニューが出たらInstal系項目から選んでインストーラの起動
   * OSのインストーラに従う
 
@@ -186,6 +184,14 @@
       + extension=php_intl.dll
       + extension=php_mbstring.dll
     ```
+# raspbian(Debian)でphp7.1のインストール
+  参）http://aonasuzutsuki.hatenablog.jp/entry/2017/07/24/005028
+  * 適当なディレクトリを作成して移動
+  * ダウンロード：`wget http://jp2.php.net/get/php-7.1.7.tar.gz/from/this/mirror -O php-7.1.7.tar.gz`
+  * 解凍：`tar -xf {ディレクトリ}/{圧縮ファイル名}`
+  * 解凍したフォルダに移動
+  * `./buildconf`を実行して、必要がないと言われれば次へ
+
 
   ## プロジェクト作成時に'ext-simplexml'がないと言われる
   参）https://saka24.blue/index.php/2017/07/10/simplexml/
