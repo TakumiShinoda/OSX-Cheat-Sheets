@@ -142,11 +142,16 @@
   ***タイプ：*** Other
   <br>
   ***バージョン*** Other Unknown(64bit)
+  ***バージョン：*** Other Unknown(64bit)
+  <br>
+  ***容量：*** 8GB以上が必要
   <br>
   <br>
   * 作成したイメージを起動
   * OSイメージを要求されるのでOSイメージ（ex. .iso）ファイルを選択
   * 各OS毎のインストールに従う
+  * メニューが出たらInstal系項目から選んでインストーラの起動
+  * OSのインストーラに従う
 
 <a id="raspbianでapache+phpのセッティング"></a>
 # raspbian(Debian)でapache + phpのセッティング
