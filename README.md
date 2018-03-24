@@ -12,6 +12,7 @@
 * [raspbian(Debian)でComposerのインストール](#raspbianでComposerのインストール)
 * [raspbian(Debian)でapache + phpのセッティング](#raspbianでapache+phpのセッティング)
 * [raspbian(Debian)でcakephpの詰まる所](#raspbianでcakephpの詰まる所)
+* [npmでモジュールの最新バージョン確認を簡易化する](#npmでモジュールの最新バージョン確認を簡易化する)
 
 <a id="OSXのパス通し"></a>
 # OSXのパス通し
@@ -202,6 +203,7 @@
   * `./buildconf`を実行して、必要がないと言われれば次へ
 
 
+<a id="npmでモジュールの最新バージョン確認を簡易化する"></a>
 # npmでモジュールの最新バージョン確認を簡易化する
   * 'npm-check-updates'をインストール
   ```
