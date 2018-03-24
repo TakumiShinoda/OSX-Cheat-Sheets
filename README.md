@@ -202,3 +202,20 @@
   * `./buildconf`を実行して、必要がないと言われれば次へ
 
 
+# npmでモジュールの最新バージョン確認を簡易化する
+  * 'npm-check-updates'をインストール
+  ```
+    npm install -g npm-check-updates
+  ```
+  * 最新版を確かめる
+  ```
+    ncu
+  ```
+  * 最新ばんにpackage.jsonを書き換える
+  ```
+    ncu -u
+  ```
+  * インストールする
+  ```
+    npm install
+  ```
