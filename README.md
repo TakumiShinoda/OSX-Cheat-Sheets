@@ -184,14 +184,6 @@
       + extension=php_intl.dll
       + extension=php_mbstring.dll
     ```
-# raspbian(Debian)でphp7.1のインストール
-  参）http://aonasuzutsuki.hatenablog.jp/entry/2017/07/24/005028
-  * 適当なディレクトリを作成して移動
-  * ダウンロード：`wget http://jp2.php.net/get/php-7.1.7.tar.gz/from/this/mirror -O php-7.1.7.tar.gz`
-  * 解凍：`tar -xf {ディレクトリ}/{圧縮ファイル名}`
-  * 解凍したフォルダに移動
-  * `./buildconf`を実行して、必要がないと言われれば次へ
-
 
   ## プロジェクト作成時に'ext-simplexml'がないと言われる
   参）https://saka24.blue/index.php/2017/07/10/simplexml/
@@ -200,3 +192,13 @@
   * ext-simplexmlは存在しないので、'halilim/xml-iterator'をインストールする
 
     `composer require halilim/xml-iterator`
+
+# [非推奨]raspbian(Debian{Stretch})でphp7.1のインストール（ビルド）(Apacheとの連携不可)
+  参）http://aonasuzutsuki.hatenablog.jp/entry/2017/07/24/005028
+  * 適当なディレクトリを作成して移動
+  * ダウンロード：`wget http://jp2.php.net/get/php-7.1.7.tar.gz/from/this/mirror -O php-7.1.7.tar.gz`
+  * 解凍：`tar -xf {ディレクトリ}/{圧縮ファイル名}`
+  * 解凍したフォルダに移動
+  * `./buildconf`を実行して、必要がないと言われれば次へ
+
+
