@@ -13,6 +13,7 @@
 * [raspbian(Debian)でapache + phpのセッティング](#raspbianでapache+phpのセッティング)
 * [raspbian(Debian)でcakephpの詰まる所](#raspbianでcakephpの詰まる所)
 * [npmでモジュールの最新バージョン確認を簡易化する](#npmでモジュールの最新バージョン確認を簡易化する)
+* [Python版のopenCVの導入方法(2018/4/19 現在)](#Python版のopenCVの導入方法)
 
 <a id="OSXのパス通し"></a>
 # OSXのパス通し
@@ -213,11 +214,23 @@
   ```
     ncu
   ```
-  * 最新ばんにpackage.jsonを書き換える
+  * 最新の状態にpackage.jsonを書き換える
   ```
     ncu -u
   ```
   * インストールする
   ```
     npm install
+  ```
+
+<a id="Python版のopenCVの導入方法"></a>
+# Python版のopenCVの導入方法(2018/4/19 現在)
+  * 本体のインストール
+  ```
+    pip install opencv-python
+  ```
+
+  * 必要パッケージ等のインストール
+  ```
+    pip install opencv-contrib-python
   ```
