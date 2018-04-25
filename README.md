@@ -14,6 +14,7 @@
 * [raspbian(Debian)でcakephpの詰まる所](#raspbianでcakephpの詰まる所)
 * [npmでモジュールの最新バージョン確認を簡易化する](#npmでモジュールの最新バージョン確認を簡易化する)
 * [Python版のopenCVの導入方法(2018/4/19 現在)](#Python版のopenCVの導入方法)
+* [Macで'pyenv install'した時にssl系でエラーが出た時](#MacPythonSslError)
 
 <a id="OSXのパス通し"></a>
 # OSXのパス通し
@@ -234,3 +235,17 @@
   ```
     pip install opencv-contrib-python
   ```
+
+<a id="MacPythonSslError"></a>
+# Macで'pyenv install'した時にssl系でエラーが出た時
+  * ターミナルで入力
+  ```
+  CFLAGS="-I$(brew --prefix openssl)/include" LDFLAGS="-L$(brew --prefix openssl)/lib" pyenv
+  ```
+
+  * pyenvでinstall
+  ```
+  pyenv install {インストールしたいバージョン}
+  ```
+
+  * 注意）上記作業後にエラーが出る場合すでにpythonはpyenv上でインストールされている場合があるので、`pyenv versions`で確認する。
