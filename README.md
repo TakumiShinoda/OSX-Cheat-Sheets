@@ -15,6 +15,7 @@
 * [npmでモジュールの最新バージョン確認を簡易化する](#npmでモジュールの最新バージョン確認を簡易化する)
 * [Python版のopenCVの導入方法(2018/4/19 現在)](#Python版のopenCVの導入方法)
 * [Macで'pyenv install'した時にssl系でエラーが出た時](#MacPythonSslError)
+* [ESP32をArduino IDEで書き込む時の注意](#ESP32ARDUINOATTENTION)
 
 <a id="OSXのパス通し"></a>
 # OSXのパス通し
@@ -249,3 +250,7 @@
   ```
 
   * 注意）上記作業後にエラーが出る場合すでにpythonはpyenv上でインストールされている場合があるので、`pyenv versions`で確認する。
+
+<a id="ESP32ARDUINOATTENTION"></a>
+# ESP32をArduino IDEで書き込む時の注意
+  * 書き込み速度は230400bpsまで（シリアル変換はCH340Gの場合）
